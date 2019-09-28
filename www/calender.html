@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Apache Cordova</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <style>
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background: #f0f4f8;
+}
+.calender {
+  margin: 2rem auto;
+  width: 28rem; height: 32rem;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  background: #404476;
+  font-size: 0;
+}
+.day, .week, .month {
+  font-family: 'Arimo', sans-serif;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  color: #ccc;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 4rem; height: 4rem;
+  border: 1px solid;
+  border-color: rgba(255,255,255,0);
+  border-radius: 50%;
+  transition: 200ms ease-in-out;
+}
+.week {
+  cursor: default;
+  color: #aaa;
+  font-size: 1.2rem;
+}
+.month {
+  width: 100%;
+}
+.day:hover {
+  border-color: rgba(255,255,255,.2);
+  background: rgba(255,255,255,.1);
+}
+.not {
+  color: #999;
+}
+        </style>
+    </head>
+    <body>
+      <div class="menu teal-900 cover blend-multiply" id="menuDiscover" style="background-image:url(/img/nature1.jpg)">
+        <div class="cover align-center">
+          <img class="avatar circle border-white shadow" src="/img/33.jpg">
+          <h1 class="text-teal-300">Shivam Pathak</h1>
+          <p class="text-grey">shivam.pathak@mail.com</p>
+        </div>
+        <div class="list no-border">
+          <a class="item space-small">
+            <div class="left">
+              <i class="icon ion-ios-heart-outline grey-300"></i>
+            </div>
+            <h1 class="text-grey-300">My Orders</h1>
+          </a>
+          <a class="item space-small">
+            <div class="left">
+              <i class="icon ion-ios-flame-outline grey-300"></i>
+            </div>
+            <h1 class="text-grey-300">Predective Calender</h1>
+            <div class="right">
+              <span class="text-small border-red text-red radius padding">12</span>
+            </div>
+          </a>
+          <a class="item space-small">
+            <div class="left">
+              <i class="icon ion-ios-location-outline grey-300"></i>
+            </div>
+            <h1 class="text-grey-300">Compain</h1>
+          </a>
+          <a class="item space-small">
+            <div class="left">
+              <i class="icon ion-ios-person-outline grey-300"></i>
+            </div>
+            <h1 class="text-grey-300">Organization</h1>
+            <div class="right">
+              <span class="text-small border-green text-green radius padding">7</span>
+            </div>
+          </a>
+          <a class="item space-small">
+            <div class="left">
+              <i class="icon ion-ios-chatbubble-outline grey-300"></i>
+            </div>
+            <h1 class="text-grey-300">Notifications</h1>
+          </a>
+        </div>
+      </div>
+      <div class="header teal">
+        <div class="left">
+          <button class="icon ion-navicon-round" onclick="openMenu('menuDiscover')"></button>
+        </div>
+        <h1 class="title align-center">SmartShip</h1>
+        <div class="right">
+          <span class="icon-badge text-small red radius padding">3</span>
+          <button class="icon ion-earth"></button>
+        </div>
+      </div>
+      
+      <div class="space"></div>
+      <div class="list white no-border radius shadow">
+        
+        
+        <div class="item text-grey-600">
+          <br><br>
+          <div class="calender">
+              <div class="month">August</div>
+              <div class="week">S</div>
+              <div class="week">M</div>
+              <div class="week">T</div>
+              <div class="week">W</div>
+              <div class="week">T</div>
+              <div class="week">F</div>
+              <div class="week">S</div>
+              <div class="not day">26</div>
+              <div class="not day">27</div>
+              <div class="not day">28</div>
+              <div class="not day">29</div>
+              <div class="not day">30</div>
+              <div class="not day">31</div>
+              <div class="day">1</div>
+              <div class="day">2</div>
+              <div class="day">3</div>
+              <div class="day">4</div>
+              <div class="day">5</div>
+              <div class="day">6</div>
+              <div class="day">7</div>
+              <div class="day">8</div>
+              <div class="day">9</div>
+              <div class="day">10</div>
+              <div class="day">11</div>
+              <div class="day">12</div>
+              <div class="day">13</div>
+              <div class="day">14</div>
+              <div class="day">15</div>
+              <div class="day">16</div>
+              <div class="day">17</div>
+              <div class="day">18</div>
+              <div class="day">19</div>
+              <div class="day">20</div>
+              <div class="day">21</div>
+              <div class="day">22</div>
+              <div class="day">23</div>
+              <div class="day">24</div>
+              <div class="day">25</div>
+              <div class="day">26</div>
+              <div class="day">27</div>
+              <div class="day">28</div>
+              <div class="day">29</div>
+              <div class="day">30</div>
+              <div class="day">31</div>
+              <div class="not day">1</div>
+              <div class="not day">2</div>
+              <div class="not day">3</div>
+              <div class="not day">4</div>
+              <div class="not day">5</div>
+            </div>
+          
+        </div>
+      </div>
+
+
+       
+
+      
+      <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
