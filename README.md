@@ -1,8 +1,8 @@
 # smartship
 
 ## Description
-The app is made for the a shipping hackathon purpose. It consists of a android app to measure weight and size of object using camera of phone.
-Also there are features to get your shipping charges calculated and get suggestive packing.
+The android app is made for the a shipping hackathon purpose. It consists of a android app to measure weight and size of object using camera of phone. App is made with the help of Apache Cordova. Backend is on Flask.
+Also there are features to get your shipping charges calculated and get suggestive packing. Shipping charges are calculated with the help of API provided by Pitney Bowes
 
 ## Features
 
